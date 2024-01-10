@@ -19,7 +19,9 @@ class CRM_Profilecontrol_Utils {
       $roles = user_roles(TRUE);
     }
     elseif (CIVICRM_UF == 'WordPress') {
-      $roles = CRM_Cmsuser_Utils::getJoomlaGroups();
+      global $wp_roles;
+      $roles = $wp_roles->get_names();
+      unset($roles['anonymous_user']);
     }
 
     return $roles;
