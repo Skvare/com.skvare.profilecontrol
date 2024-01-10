@@ -4,6 +4,10 @@
 
 Control the profile visibility using CMS user roles.
 
+This will control the accessibility of your profile based on your role, even if you give permissions to the CMS like `profile create`, `profile listings', etc.
+
+Each profile can have its own controls for accessibility.
+
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
@@ -22,7 +26,7 @@ install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
 cd <extension-dir>
-cv dl com.skvare.profilecontrol@https://github.com/FIXME/com.skvare.profilecontrol/archive/master.zip
+cv dl com.skvare.profilecontrol@https://github.com/Skvare/com.skvare.profilecontrol/archive/master.zip
 ```
 
 ## Installation (CLI, Git)
@@ -31,14 +35,16 @@ Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) 
 install it with the command-line tool [cv](https://github.com/civicrm/cv).
 
 ```bash
-git clone https://github.com/FIXME/com.skvare.profilecontrol.git
+git clone https://github.com/Skvare/com.skvare.profilecontrol.git
 cv en profilecontrol
 ```
 
 ## Getting Started
 * Go to profile settings and expand the `Advanced Settings` panel.
-* Here you will see the fields `Restrict Acess to Roles`, `Negate Access Roles?
-`, `Allow access to anonymous users?`.
+* Here you will see the fields `Restrict Acess to Roles`, `Negate Access Roles?`, `Allow access to anonymous users?`.
 * Choose the appropriate setting as per your needs.
+* `Restrict Acess to Roles` is the role list of CMS, its multiselect field.
+* `Negate Access Roles?` : We can revert the role selection.
+* `Allow access to anonymous users?`: accessibility for anonymous users.
 
 
