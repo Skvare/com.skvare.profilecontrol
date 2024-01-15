@@ -23,6 +23,10 @@ class CRM_Profilecontrol_Utils {
       $roles = $wp_roles->get_names();
       unset($roles['anonymous_user']);
     }
+    elseif (CIVICRM_UF == 'Joomla') {
+      $roles = CRM_Cmsuser_Utils::getJoomlaGroups();
+      unset($roles[1]);
+    }
 
     return $roles;
   }
@@ -106,7 +110,6 @@ class CRM_Profilecontrol_Utils {
   public static function AnonymouseRoels() {
     if (CIVICRM_UF == 'Drupal8') {
       $user_role_names = user_role_names(TRUE);
-      var_dump($user_role_names);exit;
       return $user_role_names['authenticated'];
     }
     elseif (CIVICRM_UF == 'Drupal' || CIVICRM_UF == 'Backdrop') {

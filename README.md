@@ -48,3 +48,12 @@ cv en profilecontrol
 * `Allow access to anonymous users?`: accessibility for anonymous users.
 
 
+## Get support now
+
+Control the profile visibility extension is open source software. Its support and improvement depends upon the good will and contribution of open source developers' time and the investment of money by individuals and organizations.
+
+We do our best to answer requests and fix bugs, and are committed to continuing development and supporting the extension as both CMS and CiviCRM evolve.
+
+Primary development is managed by [Skvare](https://skvare.com), but a community of developers supports and contributes to the module.
+
+If you or your organization has specific or immediate needs, or simply wishes to support the continued development and maintenance of this extension you can [Contact Skvare](https://skvare.com/contact) and our dedicated team of account managers, business analysts, project managers, and developers will work to get the solution you need, as fast as we can.
